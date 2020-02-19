@@ -2,4 +2,4 @@
 
 This is the starter page
 
-- [x] XML Intro: https://github.com/meekly/xml_intro
+- [x] XML Intro: [https://github.com/meekly/xml_intro](https://github.com/meekly/xml_intro)
