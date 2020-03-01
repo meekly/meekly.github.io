@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<?xml-stylesheet type="text/xsl" href="xsl_lab.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/meekly/xsl_lab/master/stylesheet.xsl" ?>
 <root>
 <строка>
   <операнд>σ</операнд>
