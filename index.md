@@ -7,4 +7,4 @@
   - [Stylesheeted XML](dist/doc.xml)
 1. FUNC_00*
   - FUNC_001: [func_001.js](https://github.com/meekly/func_00/blob/master/func_001.js)
-
+  - FUNC_002: [func_002.js](https://github.com/meekly/func_00/blob/master/func_002.js)
