@@ -20,3 +20,4 @@ Out.log(q());
 ```
   - FUNC_004: [kodaktor](https://kodaktor.ru/func_e9500)
   - FUNC_005: [kodaktor](https://kodaktor.ru/func_117e9)
+  - FUNC_006: [kodaktor](https://kodaktor.ru/func_83ac0)
