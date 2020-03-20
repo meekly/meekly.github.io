@@ -8,16 +8,7 @@
 1. FUNC_00*
   - FUNC_001: [func_001.js](https://github.com/meekly/func_00/blob/master/func_001.js)
   - FUNC_002: [func_002.js](https://github.com/meekly/func_00/blob/master/func_002.js)
-  - FUNC_003: [kodaktor (insert code downside)](https://kodaktor.ru/func_00ed4)
-
-```javascript
-import qv from "/j/func_003_export";
-
-const q = qv.bind({}, 5)
-
-// здесь ваш ответ
-Out.log(q());
-```
+  - FUNC_003: [kodaktor](https://kodaktor.ru/func_56992)
   - FUNC_004: [kodaktor](https://kodaktor.ru/func_e9500)
   - FUNC_005: [kodaktor](https://kodaktor.ru/func_117e9)
   - FUNC_006: [kodaktor](https://kodaktor.ru/func_83ac0)
