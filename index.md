@@ -2,6 +2,8 @@
 
 Киселев Валентин Николаевич P41072
 
+### Tasks [tasks-2020-spring](https://github.com/GossJS/ifmo-2019/tree/tasks-2020-spring#%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F)
+
 1. XML Intro: [https://github.com/meekly/xml_intro](https://github.com/meekly/xml_intro)
 1. XLS Lab: [https://github.com/meekly/xsl_lab](https://github.com/meekly/xsl_lab)
   - [Stylesheeted XML](dist/doc.xml)
