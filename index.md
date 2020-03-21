@@ -1,4 +1,6 @@
-## Welcome to @meekly projects registry for ITMO University
+## Web portfolio
+
+### Author information
 
 <h4 id="author" title="GossJS">Valentin Kiselev</h4>
 
