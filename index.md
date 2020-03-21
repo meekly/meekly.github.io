@@ -15,3 +15,4 @@
   - FUNC_007: [kodaktor](https://kodaktor.ru/func_86615)
   - FUNC_008: [kodaktor](https://kodaktor.ru/func_29dd0)
   - FUNC_009: [kodaktor](https://kodaktor.ru/func_e95ed)
+1. ASYNC_TASK: [codepen.io](https://codepen.io/mrexox/pen/GRJXRXa)
