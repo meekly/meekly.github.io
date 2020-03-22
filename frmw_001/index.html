@@ -1,2 +1,38 @@
+<h2>React Example</h2>
 <div class="cont"></div>
 <script src="./dist/main.js"></script>
+<code>
+    <pre>
+import React, { Component as C } from 'react';
+import { render as r } from 'react-dom';
+
+import Degs from './components/Degs';
+
+class App extends C {
+  constructor() {
+    super();
+    this.state = {
+      value: ''
+    }
+  }
+  change(v) {
+    this.setState(({ value }) =&gt; ({ value: v }))
+  }
+  render(){
+    return (
+      &lt;div&gt;
+        &lt;input value={ this.state.value }
+               onChange={({ target: {value: v}}) =&gt; this.change(v)} /&gt;
+        &lt;input value={ this.state.value }
+               onChange={({ target: {value: v}}) =&gt; this.change(v)} /&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+
+r(
+  &lt;App /&gt;,
+  document.querySelector('.cont')
+);
+    </pre>
+</code>
