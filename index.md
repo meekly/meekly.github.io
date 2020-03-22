@@ -26,3 +26,6 @@
 1. ASYNC_TASK: [codepen.io](https://codepen.io/mrexox/pen/GRJXRXa)
 1. BABL_002: [kodaktor](https://kodaktor.ru/?!=bind02032018_66f1d)
 1. EVNT_003: [kodaktor](https://kodaktor.ru/custom_cc15c)
+1. FRMW_001:
+  - [web](/frmw_001)
+  - [sources]()
