@@ -7,6 +7,7 @@
 #### Group: P41072
 
 ### Tasks [tasks-2020-spring](https://github.com/GossJS/ifmo-2019/tree/tasks-2020-spring#%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F)
+
 | Задание | Решение | Исходники |
 | ------- | ------- | --------- |
 |[CART](https://kodaktor.ru/g/cart) | [решение (web)](/cart) | [исходники JS](https://github.com/meekly/meekly.github.io/blob/master/cart/cart.js) |
