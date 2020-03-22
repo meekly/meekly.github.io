@@ -53,19 +53,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function notItemOnCart(item, position) {
+        let cartPosition = $('.cart').position();
+
+        return position.top + $(item).height() < cartPosition.top
+            || position.left + $(item).width() < cartPosition.left
+            || cartPosition.top + $('.cart').height() < position.top
+            || cartPosition.left + $('.cart').width() < position.left;
+    }
 
     function handleAdd(item, position) {
         let cartPosition = $('.cart').position();
 
-        if (
-             position.top + $(item).height() < cartPosition.top
-             ||
-             position.left + $(item).width() < cartPosition.left
-             ||
-             cartPosition.top + $('.cart').height() < position.top
-             ||
-             cartPosition.left + $('.cart').width() < position.left
-           ) { return; }
+        if (notItemOnCart(item, position)) { return }
 
         $('.cart').css('background-color', 'white');
 
@@ -77,17 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleDrag(item, position) {
-        let cartPosition = $('.cart').position();
-
-        if (
-             position.top + $(item).height() < cartPosition.top
-             ||
-             position.left + $(item).width() < cartPosition.left
-             ||
-             cartPosition.top + $('.cart').height() < position.top
-             ||
-             cartPosition.left + $('.cart').width() < position.left
-           ) {
+        if (notItemOnCart(item,position)) {
             $('.cart').css('background-color', 'white');
             return;
         }
