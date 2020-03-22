@@ -12,20 +12,48 @@
   - [задание](https://kodaktor.ru/g/cart)
   - [решение (web)](/cart)
   - [решение (исходники JS)](https://github.com/meekly/meekly.github.io/blob/master/cart/cart.js)
-1. XML Intro: [https://github.com/meekly/xml_intro](https://github.com/meekly/xml_intro)
+1. XML Intro:
+  - [решение (github)](https://github.com/meekly/xml_intro)
 1. FUNC_00*
-  - FUNC_001 (goss_concat): [func_001.js](https://github.com/meekly/func_00/blob/master/func_001.js)
-  - FUNC_002 (this): [func_002.js](https://github.com/meekly/func_00/blob/master/func_002.js)
-  - FUNC_003 (импорт и bind): [kodaktor](https://kodaktor.ru/func_56992)
-  - FUNC_004 (func_task, compose): [kodaktor](https://kodaktor.ru/func_e9500)
-  - FUNC_005 (каррирование): [kodaktor](https://kodaktor.ru/func_117e9)
-  - FUNC_006 (транспиляция): [kodaktor](https://kodaktor.ru/func_83ac0)
-  - FUNC_007 (рекурсия): [kodaktor](https://kodaktor.ru/func_86615)
-  - FUNC_008 (массив тел, конструктор, spread): [kodaktor](https://kodaktor.ru/func_29dd0)
-  - FUNC_009 (замыкание): [kodaktor](https://kodaktor.ru/func_e95ed)
-1. ASYNC_TASK: [codepen.io](https://codepen.io/mrexox/pen/GRJXRXa)
-1. BABL_002: [kodaktor](https://kodaktor.ru/?!=bind02032018_66f1d)
-1. EVNT_003: [kodaktor](https://kodaktor.ru/custom_cc15c)
+  - FUNC_001 (goss_concat):
+    - [задание](https://kodaktor.ru/func_001)
+    - [решение (github)](https://github.com/meekly/func_00/blob/master/func_001.js)
+  - FUNC_002 (this):
+    - [задание](https://kodaktor.ru/func_002)
+    - [решение (github)](https://github.com/meekly/func_00/blob/master/func_002.js)
+  - FUNC_003 (импорт и bind):
+    - [задание](https://kodaktor.ru/func_003)
+    - [решение (kodaktor)](https://kodaktor.ru/func_56992)
+  - FUNC_004 (func_task, compose):
+    - [задание](https://kodaktor.ru/func_004)
+    - [решение (kodaktor)](https://kodaktor.ru/func_e9500)
+  - FUNC_005 (каррирование):
+    - [задание](https://kodaktor.ru/func_005)
+    - [решение (kodaktor)](https://kodaktor.ru/func_117e9)
+  - FUNC_006 (транспиляция):
+    - [задание](https://kodaktor.ru/func_006)
+    - [решение (kodaktor)](https://kodaktor.ru/func_83ac0)
+  - FUNC_007 (рекурсия):
+    - [задание](https://kodaktor.ru/func_007)
+    - [решение (kodaktor)](https://kodaktor.ru/func_86615)
+  - FUNC_008 (массив тел, конструктор, spread):
+    - [задание](https://kodaktor.ru/func_008)
+    - [решение (kodaktor)](https://kodaktor.ru/func_29dd0)
+  - FUNC_009 (замыкание):
+    - [задание](https://kodaktor.ru/func_009)
+    - [решение (kodaktor)](https://kodaktor.ru/func_e95ed)
+  - FUNC_010 (безымянная рекурсия):
+    - [задание](https://kodaktor.ru/func_010)
+    - [решение (github)](https://github.com/meekly/func_00/blob/master/func_010.js)
+1. ASYNC_TASK:
+  - [задание](https://kodaktor.ru/async_tasks)
+  - [решение (codepen.io)](https://codepen.io/mrexox/pen/GRJXRXa)
+1. BABL_002:
+  - [задание](https://kodaktor.ru/babl_002)
+  - [решение (kodaktor)](https://kodaktor.ru/?!=bind02032018_66f1d)
+1. EVNT_003:
+  - [задание](https://kodaktor.ru/evnt_003)
+  - [решение (kodaktor)](https://kodaktor.ru/custom_cc15c)
 1. FRMW_001:
   - [задание](https://kodaktor.ru/frmw_001)
   - [web](/frmw_001)
