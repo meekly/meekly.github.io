@@ -12,7 +12,6 @@
 | ------- | ------- | --------- |
 |[CART](https://kodaktor.ru/g/cart) | [решение (web)](/cart) | [исходники JS](https://github.com/meekly/meekly.github.io/blob/master/cart/cart.js) |
 | XML Intro | | [исходники решения](https://github.com/meekly/xml_intro)|
-| [FUNC 00](https://kodaktor.ru/func) | | |
 | [FUNC 001 (goss_concat)](https://kodaktor.ru/func_001) | | [исходники решения](https://github.com/meekly/func_00/blob/master/func_001.js) |
 | [FUNC 002 (this)](https://kodaktor.ru/func_002) | | [исходники решения](https://github.com/meekly/func_00/blob/master/func_002.js) |
 | [FUNC 003 (импорт и bind)](https://kodaktor.ru/func_003) | [решение (kodaktor)](https://kodaktor.ru/func_56992) | |
@@ -26,7 +25,6 @@
 | [ASYNC TASK](https://kodaktor.ru/async_task) | [решение (codepen.io)](https://codepen.io/mrexox/pen/GRJXRXa) | |
 | [BABL 00](https://kodaktor.ru/babl_00) | [решение (kodaktor)](https://kodaktor.ru/?!=bind02032018_66f1d) | |
 | [EVNT 00](https://kodaktor.ru/evnt_00) | [решение (kodaktor)](https://kodaktor.ru/custom_cc15c) | |
-| FRMW 00 | |
 | [FRMW 001](https://kodaktor.ru/frmw_001) | [решение (web)](/frmw_001) | [исходники](https://github.com/meekly/meekly.github.io/tree/master/frmw_001) |
 | [FRMW 002](https://kodaktor.ru/frmw_002) | [решение (web)](/frmw_002) | [исходники](https://github.com/meekly/meekly.github.io/tree/master/frmw_002) |
 
