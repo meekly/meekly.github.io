@@ -54,7 +54,13 @@
 1. EVNT_003:
   - [задание](https://kodaktor.ru/evnt_003)
   - [решение (kodaktor)](https://kodaktor.ru/custom_cc15c)
-1. FRMW_001:
-  - [задание](https://kodaktor.ru/frmw_001)
-  - [web](/frmw_001)
-  - [sources](https://github.com/meekly/meekly.github.io/tree/master/frmw_001)
+1. FRMW_00*:
+  - FRMW_001:
+    - [задание](https://kodaktor.ru/frmw_001)
+    - [решение (web)](/frmw_001)
+    - [sources](https://github.com/meekly/meekly.github.io/tree/master/frmw_001)
+  - FRMW_002:
+    - [задание](https://kodaktor.ru/frmw_002)
+    - [решение (web)](/frmw_002)
+    - [sources](https://github.com/meekly/meekly.github.io/tree/master/frmw_002)
+
