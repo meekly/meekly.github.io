@@ -27,4 +27,4 @@
 | 15  | [EVNT 00](https://kodaktor.ru/evnt_00) | [решение (kodaktor)](https://kodaktor.ru/custom_cc15c) | |
 | 16  | [FRMW 001](https://kodaktor.ru/frmw_001) | [решение (web)](/frmw_001) | [исходники](https://github.com/meekly/meekly.github.io/tree/master/frmw_001) |
 | 17  | [FRMW 002](https://kodaktor.ru/frmw_002) | [решение (web)](/frmw_002) | [исходники](https://github.com/meekly/meekly.github.io/tree/master/frmw_002) |
-
+| 18  | [FRMW_003](https://kodaktor.ru/frmw_003) | [решение (web)](/frmw_003) | [исходники](https://github.com/meekly/meekly.github.io/tree/master/frmw_003) |
