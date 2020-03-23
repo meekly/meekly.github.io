@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h2>FRMW-005</h2>
+    <h2>FRMW_005</h2>
     <div>
       <i>R:</i>
       <input v-model="r" type="number" min="0" max="255" @change="setBg" />
