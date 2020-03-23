@@ -29,3 +29,4 @@
 | 17  | [FRMW 002](https://kodaktor.ru/frmw_002) | [решение (web)](/frmw_002) | [исходники](https://github.com/meekly/meekly.github.io/tree/master/frmw_002) |
 | 18  | [FRMW_003](https://kodaktor.ru/frmw_003) | [решение (web)](/frmw_003) | [исходники](https://github.com/meekly/meekly.github.io/blob/master/frmw_003/src/App.vue) |
 | 19  | [FRMW_004](https://kodaktor.ru/frmw_004) | [решение (web)](/frmw_004) | [исходники](https://github.com/meekly/meekly.github.io/blob/master/frmw_004/src/) |
+| 20  | [FRMW_005](https://kodaktor.ru/frmw_005) | [решение (web)](/frmw_005) | [исходники](https://github.com/meekly/meekly.github.io/blob/master/frmw_005/src/) |
