@@ -1,0 +1,15 @@
+{
+  "name": "valentin-kiselev-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Valentin Kiselev - Software Engineer",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "Valentin Kiselev",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
