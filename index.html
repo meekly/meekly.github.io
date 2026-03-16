@@ -35,6 +35,11 @@
             margin: 20px auto;
             max-width: 600px;
             box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: default;
         }
         
         .title-bar {
@@ -46,6 +51,8 @@
             justify-content: space-between;
             align-items: center;
             height: 18px;
+            cursor: move;
+            user-select: none;
         }
         
         .window-controls {
@@ -253,7 +260,16 @@
             }
             
             .window {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
                 margin: 10px;
+                cursor: default;
+            }
+            
+            .title-bar {
+                cursor: default;
             }
             
             .tech-grid {
@@ -342,6 +358,82 @@ C:\QUOTES> _
         
         updateClock();
         setInterval(updateClock, 1000);
+        
+        // Make window draggable
+        let isDragging = false;
+        let currentX;
+        let currentY;
+        let initialX;
+        let initialY;
+        let xOffset = 0;
+        let yOffset = 0;
+        
+        const windowElement = document.querySelector('.window');
+        const titleBar = document.querySelector('.title-bar');
+        
+        function dragStart(e) {
+            if (window.innerWidth <= 600) return; // Disable dragging on mobile
+            
+            if (e.type === "touchstart") {
+                initialX = e.touches[0].clientX - xOffset;
+                initialY = e.touches[0].clientY - yOffset;
+            } else {
+                initialX = e.clientX - xOffset;
+                initialY = e.clientY - yOffset;
+            }
+            
+            if (e.target === titleBar || titleBar.contains(e.target)) {
+                isDragging = true;
+                titleBar.style.background = 'linear-gradient(90deg, #000080 0%, #000040 100%)';
+            }
+        }
+        
+        function dragEnd(e) {
+            initialX = currentX;
+            initialY = currentY;
+            isDragging = false;
+            titleBar.style.background = 'linear-gradient(90deg, #0000ff 0%, #000080 100%)';
+        }
+        
+        function drag(e) {
+            if (isDragging) {
+                e.preventDefault();
+                
+                if (e.type === "touchmove") {
+                    currentX = e.touches[0].clientX - initialX;
+                    currentY = e.touches[0].clientY - initialY;
+                } else {
+                    currentX = e.clientX - initialX;
+                    currentY = e.clientY - initialY;
+                }
+                
+                xOffset = currentX;
+                yOffset = currentY;
+                
+                // Constrain to desktop bounds
+                const desktop = document.querySelector('.desktop');
+                const desktopRect = desktop.getBoundingClientRect();
+                const windowRect = windowElement.getBoundingClientRect();
+                
+                const maxX = desktopRect.width - windowRect.width;
+                const maxY = desktopRect.height - windowRect.height - 28; // Account for taskbar
+                
+                currentX = Math.max(0, Math.min(currentX, maxX));
+                currentY = Math.max(0, Math.min(currentY, maxY));
+                
+                windowElement.style.transform = `translate(${currentX}px, ${currentY}px)`;
+            }
+        }
+        
+        // Add event listeners for dragging
+        titleBar.addEventListener("mousedown", dragStart);
+        document.addEventListener("mousemove", drag);
+        document.addEventListener("mouseup", dragEnd);
+        
+        // Touch events for mobile (though disabled)
+        titleBar.addEventListener("touchstart", dragStart);
+        document.addEventListener("touchmove", drag);
+        document.addEventListener("touchend", dragEnd);
         
         // Add click effects to buttons
         document.querySelectorAll('.tech-button, .control-btn, .start-button').forEach(btn => {
