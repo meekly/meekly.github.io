@@ -12,121 +12,351 @@
         }
         
         body {
-            font-family: 'Courier New', monospace;
-            background-color: #ffffff;
+            font-family: 'MS Sans Serif', sans-serif;
+            font-size: 11px;
+            background: #c0c0c0;
             color: #000000;
-            line-height: 1.6;
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: 0 auto;
+            line-height: 1.4;
+            padding: 8px;
         }
         
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #000000;
-            padding-bottom: 5px;
+        .desktop {
+            min-height: 100vh;
+            background: #008080;
+            background-image: 
+                radial-gradient(circle at 25% 25%, #008080 0%, #004040 50%);
+            position: relative;
+            padding: 20px;
         }
         
-        h2 {
-            font-size: 18px;
-            margin: 30px 0 15px 0;
-            text-decoration: underline;
+        .window {
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
-        h3 {
-            font-size: 16px;
-            margin: 20px 0 10px 0;
+        .title-bar {
+            background: linear-gradient(90deg, #0000ff 0%, #000080 100%);
+            color: white;
+            padding: 2px 4px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 18px;
         }
         
-        p, li {
+        .window-controls {
+            display: flex;
+            gap: 2px;
+        }
+        
+        .control-btn {
+            width: 16px;
+            height: 14px;
+            background: #c0c0c0;
+            border: 1px outset #c0c0c0;
+            font-size: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: black;
+        }
+        
+        .control-btn:active {
+            border: 1px inset #c0c0c0;
+        }
+        
+        .window-content {
+            padding: 8px;
+            background: #c0c0c0;
+        }
+        
+        .menu-bar {
+            background: #c0c0c0;
+            border-bottom: 1px solid #808080;
+            padding: 2px;
             margin-bottom: 8px;
         }
         
-        ul {
-            margin-left: 20px;
-            list-style-type: none;
+        .menu-item {
+            display: inline-block;
+            padding: 2px 8px;
+            cursor: pointer;
         }
         
-        ul li:before {
-            content: "- ";
-            margin-right: 5px;
+        .menu-item:hover {
+            background: #0000ff;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            padding: 4px;
+            background: #c0c0c0;
+            border: 1px inset #c0c0c0;
+        }
+        
+        h2 {
+            font-size: 12px;
+            font-weight: bold;
+            margin: 12px 0 6px 0;
+            padding: 2px 4px;
+            background: #008080;
+            color: white;
+            border: 1px outset #008080;
+        }
+        
+        h3 {
+            font-size: 11px;
+            font-weight: bold;
+            margin: 8px 0 4px 0;
+        }
+        
+        p, li {
+            margin-bottom: 4px;
+            padding: 2px;
+        }
+        
+        .panel {
+            background: #c0c0c0;
+            border: 1px inset #c0c0c0;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        
+        .contact-panel {
+            background: #fffbf0;
+            border: 2px inset #c0c0c0;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 4px;
+            margin: 8px 0;
+        }
+        
+        .tech-button {
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            padding: 4px 8px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 10px;
+        }
+        
+        .tech-button:hover {
+            background: #e0e0e0;
+        }
+        
+        .tech-button:active {
+            border: 2px inset #c0c0c0;
         }
         
         a {
-            color: #000000;
+            color: #0000ff;
             text-decoration: underline;
         }
         
+        a:visited {
+            color: #800080;
+        }
+        
         a:hover {
-            background-color: #000000;
-            color: #ffffff;
+            background: #0000ff;
+            color: white;
         }
         
-        .ascii-art {
-            font-size: 12px;
-            margin: 20px 0;
-            white-space: pre;
+        .status-bar {
+            background: #c0c0c0;
+            border-top: 1px solid #808080;
+            padding: 2px 8px;
+            font-size: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 20px;
         }
         
-        .contact {
-            border: 1px solid #000000;
-            padding: 15px;
-            margin: 20px 0;
+        .taskbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 28px;
+            background: #c0c0c0;
+            border-top: 1px solid #ffffff;
+            display: flex;
+            align-items: center;
+            padding: 2px;
+            z-index: 1000;
         }
         
-        .tech-stack {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-            margin: 15px 0;
+        .start-button {
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            padding: 2px 8px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 4px;
         }
         
-        .tech-item {
-            border: 1px solid #000000;
-            padding: 8px;
-            text-align: center;
+        .start-button:active {
+            border: 2px inset #c0c0c0;
+        }
+        
+        .start-icon {
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(45deg, #ff0000, #ffff00, #00ff00, #0000ff);
+            border-radius: 2px;
+        }
+        
+        .clock {
+            margin-left: auto;
+            padding: 2px 8px;
+            border: 1px inset #c0c0c0;
+            font-size: 10px;
+        }
+        
+        .icon-text {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin: 4px 0;
+        }
+        
+        .icon {
+            width: 16px;
+            height: 16px;
+            background: #c0c0c0;
+            border: 1px outset #c0c0c0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8px;
         }
         
         @media (max-width: 600px) {
-            body {
-                padding: 20px 10px;
+            .desktop {
+                padding: 10px;
             }
             
-            .tech-stack {
+            .window {
+                margin: 10px;
+            }
+            
+            .tech-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <h1>VALENTIN KISELEV</h1>
-    <p>Software Engineer</p>
+    <div class="desktop">
+        <div class="window">
+            <div class="title-bar">
+                <span>📁 Valentin Kiselev - Developer</span>
+                <div class="window-controls">
+                    <div class="control-btn">_</div>
+                    <div class="control-btn">□</div>
+                    <div class="control-btn">×</div>
+                </div>
+            </div>
+            
+            <div class="menu-bar">
+                <span class="menu-item">File</span>
+                <span class="menu-item">Edit</span>
+                <span class="menu-item">View</span>
+                <span class="menu-item">Help</span>
+            </div>
+            
+            <div class="window-content">
+                <h1>VALENTIN KISELEV</h1>
+                <div class="icon-text">
+                    <div class="icon">👨‍💻</div>
+                    <span>Software Engineer</span>
+                </div>
 
-    <div class="contact">
-        <h3>CONTACT</h3>
-        <p>GitHub: <a href="https://github.com/meekly">github.com/meekly</a></p>
+                <div class="contact-panel">
+                    <h3>📞 CONTACT INFORMATION</h3>
+                    <div class="icon-text">
+                        <div class="icon">🔗</div>
+                        <span>GitHub: <a href="https://github.com/meekly">github.com/meekly</a></span>
+                    </div>
+                </div>
+
+                <h2>📋 ABOUT</h2>
+                <div class="panel">
+                    <p>I'm a software engineer passionate about building robust applications and solving complex problems. My work spans backend systems, web applications, and modern development practices.</p>
+                </div>
+
+                <h2>🔧 TECHNICAL SKILLS</h2>
+                <div class="tech-grid">
+                    <div class="tech-button">Go</div>
+                    <div class="tech-button">Ruby</div>
+                    <div class="tech-button">JavaScript</div>
+                    <div class="tech-button">TypeScript</div>
+                </div>
+
+                <div class="panel" style="font-family: 'Courier New', monospace; font-size: 10px; background: #000000; color: #00ff00; padding: 8px;">
+C:\QUOTES> type wisdom.txt<br>
+"Code is like humor. When you have to explain it, it's bad."<br>
+- Cory House<br>
+C:\QUOTES> _
+                </div>
+            </div>
+            
+            <div class="status-bar">
+                <span>Ready</span>
+                <span>Last updated: 2024 | Built with HTML/CSS</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="taskbar">
+        <div class="start-button">
+            <div class="start-icon"></div>
+            <span>Start</span>
+        </div>
+        <div class="clock" id="clock">12:00 PM</div>
     </div>
 
-    <h2>ABOUT</h2>
-    <p>I'm a software engineer passionate about building robust applications and solving complex problems. My work spans backend systems, web applications, and modern development practices.</p>
-
-    <h2>TECHNICAL SKILLS</h2>
-    <div class="tech-stack">
-        <div class="tech-item">Go</div>
-        <div class="tech-item">Ruby</div>
-        <div class="tech-item">JavaScript/TypeScript</div>
-    </div>
-
-    <div class="ascii-art">
-┌─────────────────────────────────────────────────────┐
-│  "Code is like humor. When you have to explain it,  │
-│   it's bad." - Cory House                           │
-└─────────────────────────────────────────────────────┘
-    </div>
-
-    <p style="text-align: center; margin-top: 40px; font-size: 12px;">
-        Last updated: 2024 | Built with vanilla HTML/CSS
-    </p>
+    <script>
+        // Update clock
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+            document.getElementById('clock').textContent = timeString;
+        }
+        
+        updateClock();
+        setInterval(updateClock, 1000);
+        
+        // Add click effects to buttons
+        document.querySelectorAll('.tech-button, .control-btn, .start-button').forEach(btn => {
+            btn.addEventListener('mousedown', function() {
+                this.style.transform = 'translate(1px, 1px)';
+            });
+            
+            btn.addEventListener('mouseup', function() {
+                this.style.transform = 'translate(0, 0)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translate(0, 0)';
+            });
+        });
+    </script>
 </body>
 </html>
