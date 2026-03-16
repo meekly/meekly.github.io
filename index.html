@@ -365,11 +365,14 @@ C:\QUOTES> _
         let currentY;
         let initialX;
         let initialY;
-        let xOffset = 0;
-        let yOffset = 0;
         
         const windowElement = document.querySelector('.window');
         const titleBar = document.querySelector('.title-bar');
+        
+        // Get initial position
+        const windowRect = windowElement.getBoundingClientRect();
+        let xOffset = windowRect.left;
+        let yOffset = windowRect.top;
         
         function dragStart(e) {
             if (window.innerWidth <= 600) return; // Disable dragging on mobile
@@ -389,8 +392,6 @@ C:\QUOTES> _
         }
         
         function dragEnd(e) {
-            initialX = currentX;
-            initialY = currentY;
             isDragging = false;
             titleBar.style.background = 'linear-gradient(90deg, #0000ff 0%, #000080 100%)';
         }
@@ -411,17 +412,17 @@ C:\QUOTES> _
                 yOffset = currentY;
                 
                 // Constrain to desktop bounds
-                const desktop = document.querySelector('.desktop');
-                const desktopRect = desktop.getBoundingClientRect();
                 const windowRect = windowElement.getBoundingClientRect();
                 
-                const maxX = desktopRect.width - windowRect.width;
-                const maxY = desktopRect.height - windowRect.height - 28; // Account for taskbar
+                const maxX = window.innerWidth - windowRect.width;
+                const maxY = window.innerHeight - windowRect.height - 28; // Account for taskbar
                 
                 currentX = Math.max(0, Math.min(currentX, maxX));
                 currentY = Math.max(0, Math.min(currentY, maxY));
                 
-                windowElement.style.transform = `translate(${currentX}px, ${currentY}px)`;
+                windowElement.style.left = `${currentX}px`;
+                windowElement.style.top = `${currentY}px`;
+                windowElement.style.transform = 'none';
             }
         }
         
